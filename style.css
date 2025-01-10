@@ -1,24 +1,88 @@
+body {
+  margin:0;
+  padding:0;
+}
+
+.indexbody {
+  background-image: url("./assets/waves.svg");
+  background-size:100vw;
+  background-position: 0% -25vh;
+}
+
+.lato { 
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  font-size: 12.5vh;
+  padding:none;
+  margin:1vh;
+  color:white;
+}
+
+.left-align {
+  text-align: eft;
+}
+
+.center-align {
+  text-align:center;
+}
+
+.isleGameContainer { 
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  width:35vw;
+  height:35vw;
+  padding:5vh 32.5vw;
+}
+
+.isleGameContainer div {
+  padding:30px 30px;
+  border: 3px solid rgb(20, 20, 20);
+  border-radius:7px;
+  margin:1px;
+  text-align: center; 
+  vertical-align: middle;
+}
+
+p {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin:1vh;
+  color:white;
+}
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2vh 4vh;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
