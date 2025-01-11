@@ -5,8 +5,11 @@ body {
 
 .indexbody {
   background-image: url("./assets/waves.svg");
-  background-size:100vw;
-  background-position: 0% -25vh;
+  background-size: cover;
+}
+
+.fail {
+  background-color: red;
 }
 
 .lato { 
@@ -54,6 +57,17 @@ body {
   vertical-align: middle;
 }
 
+.buttonContainer {
+  display: flex;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer button {
+  padding:1vw;
+}
+
 p {
   font-family: "Lato", serif;
   font-weight: 400;
@@ -85,4 +99,30 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
+}
+
+.flip-horizontal-bottom {
+	-webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+          animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
 }
