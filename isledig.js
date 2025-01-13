@@ -12,11 +12,14 @@ if (isNaN(score) || score == null || score < 50) {
 
 console.log(localStorage.getItem("score"))
 
-console.log("Failvar is ",failvar)
-console.log("Item of failvar is ", divArray[failvar])
 console.log("Array is ", Array.from(firstdiv.parentNode.children))
 
 divArray[failvar].querySelector('.backface').classList.add('fail')
+divArray[failvar].querySelector('.backface').classList.remove('dblbg')
+
+function updateDblCounter() {
+    document.getElementById("dblcounter").textContent = "Doubloons: "+ localStorage.getItem("score")
+}
 
 function triggerConfetti() {
     const confettiScript = document.createElement('script');
@@ -32,6 +35,9 @@ function triggerConfetti() {
 }
 
 function gamereset() {
+    if (isNaN(score) || score == null || score < 50) {
+        localStorage.setItem("score", "50");
+    }
     console.log("reset function run")
     $(".option").off("click");
     $('.option').each(function(){
@@ -39,13 +45,15 @@ function gamereset() {
             this.classList.remove('flip-horizontal-bottom')
         }
     });
+    divArray[failvar].querySelector('.backface').classList.add('dblbg')
     divArray[failvar].querySelector('.backface').classList.remove('fail')
     wager = 0
     sucesses = 0
     failvar = (Math.ceil(Math.random() * 9) - 1);
     clickEnable()
-    console.log(failvar)
     divArray[failvar].querySelector('.backface').classList.add('fail')
+    divArray[failvar].querySelector('.backface').classList.remove('dblbg')
+    updateDblCounter()
 }
 
 $(".reset").on("click", function () {
@@ -94,3 +102,4 @@ function clickEnable() {
 
 
 clickEnable()
+updateDblCounter()
