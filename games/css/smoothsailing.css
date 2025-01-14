@@ -1,0 +1,58 @@
+canvas {
+    background: #853636;
+    display:block;
+    margin:0 auto;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+
+.lato { 
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.dm-serif {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+p {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:1vh;
+    color:white;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2vh 4vh;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  
