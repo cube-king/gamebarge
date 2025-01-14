@@ -10,6 +10,11 @@ if (isNaN(score) || score == null || score < 50) {
     localStorage.setItem("score", "50");
 }
 
+function updateWagerCounter() {
+    document.getElementById("wagertext").textContent = "Wager: "+ (wager).toString()
+}
+
+
 console.log(localStorage.getItem("score"))
 
 console.log("Array is ", Array.from(firstdiv.parentNode.children))
@@ -54,6 +59,7 @@ function gamereset() {
     divArray[failvar].querySelector('.backface').classList.add('fail')
     divArray[failvar].querySelector('.backface').classList.remove('dblbg')
     updateDblCounter()
+    updateWagerCounter()
 }
 
 $(".reset").on("click", function () {
@@ -68,6 +74,7 @@ $(".wager50").on("click", function () {
         localStorage.setItem("score", score);
         console.log("Subtracted score", score)
     }
+    updateWagerCounter()
 })
 
 function clickEnable() {
@@ -103,3 +110,4 @@ function clickEnable() {
 
 clickEnable()
 updateDblCounter()
+updateWagerCounter()
