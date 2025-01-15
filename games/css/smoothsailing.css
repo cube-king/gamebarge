@@ -1,5 +1,5 @@
 canvas {
-  background: #367b85;
+  background: #2e5d71;
   display: block;
   margin: 0 auto;
   height: 90vh;
@@ -8,13 +8,12 @@ canvas {
 body {
   margin: 0;
   padding: 0;
-  background-color: #25545c;
+  background-color: #295264;
   overflow:hidden;
   height:100vh;
   width: 100vw;
   margin-top:0vh;
 }
-
 
 .lato {
   font-family: "Lato", serif;

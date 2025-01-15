@@ -28,13 +28,13 @@ TODOLIST PRE-COMPLETION
 
 -[x] Basic functionality for WheelOfTreasure
 
--[ ] Basic functionality for RustySlots
+-[  ] Basic functionality for RustySlots
 
 -[x] Basic functionality for SmoothSailing
 
--[ ] Better css for each page
+-[  ] Better css for each page
 
--[ ] Better color scheme 
+-[  ] Better color scheme 
 
--[ ] Leaderboard
+-[  ] Leaderboard
 
