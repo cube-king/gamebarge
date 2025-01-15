@@ -19,10 +19,18 @@ Have fun, and don't forget to take breaks!
 TODOLIST PRE-COMPLETION
 
 -[x] Basic Index Page
+
 -[x] Basic functionality for IsleDig
+
 -[x] Basic functionality for WheelOfTreasure
+
 -[ ] Basic functionality for RustySlots
+
 -[x] Basic functionality for SmoothSailing
+
 -[ ] Better css for each page
+
 -[ ] Better color scheme 
+
 -[ ] Leaderboard
+
