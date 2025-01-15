@@ -16,7 +16,11 @@ And last but not least, Smooth Sailing is a gradual difficulty increase skillbas
 
 Have fun, and don't forget to take breaks!
 
+---
+
 TODOLIST PRE-COMPLETION
+
+---
 
 -[x] Basic Index Page
 
