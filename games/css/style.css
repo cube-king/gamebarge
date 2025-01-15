@@ -11,7 +11,7 @@ body {
   background-image: url("../../assets/waves.svg");
   background-size: cover;
 }
-
+  
 .fail {
   background-color: red;
 }
