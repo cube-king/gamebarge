@@ -100,7 +100,7 @@ body {
   left: -50%; 
   width: 200%;
   height: 200%; 
-  background-image: url("./assets/doubloon.png");
+  background-image: url("../../assets/doubloon.png");
   background-size: 10%; 
   background-repeat: repeat;
   transform: rotate(45deg); 
