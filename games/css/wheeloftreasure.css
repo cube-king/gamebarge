@@ -6,7 +6,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #040200;
 }
 
 ul li {
@@ -41,7 +41,7 @@ body{
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background: rgb(20, 20, 51);
+  background: #5199B8;
 }
 .pointer{
   border:2px solid red;
@@ -60,7 +60,7 @@ body{
   content: '';
   width: 64px;
   height: 64px;
-  background: url('./assets/Arrow.png') no-repeat;
+  background: url('../../assets/Arrow.png') no-repeat;
   background-size: 64px;
   right: 0px;
   top: 50%;
@@ -145,11 +145,12 @@ span b{
   height: 15%;
   border-radius: 50%;
   border: 4px solid #fff;
-  background-color: #001aff;
+  background-color: #5199B8;
   color: #fff;
   font-weight: bold;
   font-size: 22px;
   cursor: pointer;
+  font-family: "Arial";
 }
 .spin:active{
   width: 13%;

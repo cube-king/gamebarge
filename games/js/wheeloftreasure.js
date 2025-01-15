@@ -4,6 +4,19 @@ function updateDblCounter() {
     document.getElementById("dblcounter").textContent = "Doubloons: "+ localStorage.getItem("score")
 }
 
+function triggerConfetti() {
+    const confettiScript = document.createElement('script');
+    confettiScript.src = "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js";
+    confettiScript.onload = () => {
+        confetti({
+            particleCount: 200,
+            spread: 100,
+            origin: { y: 0.5 }
+        });
+    };
+    document.body.appendChild(confettiScript);
+}
+
 updateDblCounter()
 
 function roundnum(num,amt){
@@ -31,6 +44,7 @@ function rotateFunction(){
     }
     else if (deg%360==180) {
         addscore(5000)
+        setTimeout(triggerConfetti,3000)
     }
     else if (deg%360==225) {
         addscore(-500)

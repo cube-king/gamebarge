@@ -1,58 +1,94 @@
 canvas {
-    background: #853636;
-    display:block;
-    margin:0 auto;
+  background: #367b85;
+  display: block;
+  margin: 0 auto;
+  height: 90vh;
 }
 
 body {
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
+  background-color: #25545c;
+  overflow:hidden;
+  height:100vh;
+  width: 100vw;
+  margin-top:0vh;
 }
 
 
-.lato { 
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: normal;
+.lato {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-  
+
 .dm-serif {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -100vh;
+}
+
+button {
+  font-family:"Lato", serif;
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: #1f2937;
+  color: white;
+  border: #131922;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2em;
+  cursor: pointer;
+  transition:all 0.5s ease;
+}
+
+button:hover {
+  background: #003d93
+}
+
+button:disabled {
+  background:none;
+  color:#00000000;
+  border:none;
+}
 
 p {
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin:1vh;
-    color:white;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  ul li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 2vh 4vh;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
-  
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 1vh;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #040200;
+}
+
+ul li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2vh 4vh;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
