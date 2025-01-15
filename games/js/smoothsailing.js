@@ -151,9 +151,10 @@ function drawDecos() {
 function draw() {
   if (end == false) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawDecos();
     drawship();
     drawObstacles();
-    drawDecos();
+
     if (rightPressed) {
       shipX += 7;
       if (shipX + shipWidth > canvas.width) {
