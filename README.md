@@ -8,7 +8,7 @@ IsleDig is the unlimited yield game - despite having slim odds of winning, you c
 
 Wheel of Treasure is a pure chance game - simply spin the wheel and hope for the best. This demonstrates the appeal of a slow-burn pure chance game, and how it can benefit or be a detriment towards your funds.
 
-Rusty slots is (still in development)
+Rusty slots is a simple slot machine game - once again, pure chance. However, this is used to demonstrate attention span capturing, and its effect on how much you spend.
 
 And last but not least, Smooth Sailing is a gradual difficulty increase skillbased dodging game, much like the Microsoft Surf Game. This demonstrates how skill and earning can directly correlate, even when chance is involved.
 
@@ -22,15 +22,15 @@ TODOLIST PRE-COMPLETION
 
 ---
 
--[x] Basic Index Page
+-[X] Basic Index Page
 
--[x] Basic functionality for IsleDig
+-[X] Basic functionality for IsleDig
 
--[x] Basic functionality for WheelOfTreasure
+-[X] Basic functionality for WheelOfTreasure
 
--[  ] Basic functionality for RustySlots
+-[X] Basic functionality for RustySlots
 
--[x] Basic functionality for SmoothSailing
+-[X] Basic functionality for SmoothSailing
 
 -[  ] Better css for each page
 
