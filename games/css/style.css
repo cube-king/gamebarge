@@ -177,3 +177,29 @@ li a:hover {
             transform: rotateX(-180deg);
   }
 }
+
+
+button {
+  font-family:"Lato", serif;
+  font-size: 1em;
+  padding: 1em 3em;
+  font-weight: 500;
+  background: #1f2937;
+  color: white;
+  border: #131922;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.3em;
+  cursor: pointer;
+  transition:all 0.5s ease;
+}
+
+button:hover {
+  background: #003d93
+}
+
+button:disabled {
+  background:none;
+  color:#00000000;
+  border:none;
+}

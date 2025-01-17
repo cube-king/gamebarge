@@ -21,21 +21,29 @@ $('#rollbutton').on("click", function () {
         $("#slot2").text((validSymbols[getRandomInt(0,9)]).toString())
         $("#slot3").text((validSymbols[getRandomInt(0,9)]).toString())
         counter += 1
-        if (counter >= 100) {
-            counter = 0;
+        $("#rollbutton").text("num" + counter.toString())
+        if (counter == 100) {
             if ($("#slot1").text() == $("#slot2").text() && $("#slot2").text() == $("#slot3").text()) {
                 scoreToAddTo = Number(localStorage.getItem("score"));
                 scoreToAddTo += 50000;
                 localStorage.setItem("score", scoreToAddTo);
-                updateDblCounter()
+                updateDblCounter();
+                console.log("3trig")
+                clearInterval(i);
             }
-            else if ($("#slot1").text() == $("#slot2").text() || $("#slot2").text() == $("#slot3").text() || ("#slot1").text() == $("#slot3").text()) {
+            else if ($("#slot1").text() == $("#slot2").text() || $("#slot2").text() == $("#slot3").text() || $("#slot1").text() == $("#slot3").text()) {
                 scoreToAddTo = Number(localStorage.getItem("score"));
                 scoreToAddTo += 50;
                 localStorage.setItem("score", scoreToAddTo);
-                updateDblCounter()
+                updateDblCounter();
+                console.log("2trig")
+                clearInterval(i);
             } 
+            counter = 0
             clearInterval(i);
+        }
+        else {
+            
         }
     },10)
 });
