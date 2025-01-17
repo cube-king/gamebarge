@@ -32,6 +32,10 @@ TODOLIST PRE-COMPLETION
 
 -[X] Basic functionality for SmoothSailing
 
+---
+
+For future updates
+
 -[  ] Better css for each page
 
 -[  ] Better color scheme 
